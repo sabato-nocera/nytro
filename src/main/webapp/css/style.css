@@ -1,0 +1,340 @@
+@charset "ISO-8859-1";
+
+html, body {
+	height: 99%;
+}
+
+body {
+	font-family: arial, sans-serif;
+	background-color: #f9f8eb;
+	overflow-x: hidden;
+}
+
+#wrapper {
+	margin:-10px;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+	font-size: 3em;
+	margin-bottom: -20px;
+}
+
+header {
+	background-color: #b33f3f;
+	padding-top: 25px;
+	padding-bottom: 8px;
+	margin-bottom: 10px;
+}
+
+#logoHeader {
+	max-width: 6%;
+	height: auto;
+	margin-right: 1%;
+}
+
+#logoFooter {
+	max-width: 6%;
+	height: auto;
+	margin-right: 1.5%;
+	float: left;
+}
+
+#nytro {
+	max-width:30%;
+	height: auto;
+}
+
+header a, header a:visited, header a:hover, header a:active, footer a, footer a:visited, footer a:hover, footer a:active {
+	color: inherit;							/*Non cambiera' colore a seconda della pseudoclasse attiva associata all'ancora*/
+	text-decoration: none;
+}
+
+footer {
+	background-color: #155e63;
+	color:#f9f8eb;
+	font-size: 0.8em;
+	padding: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin-bottom: -20px;
+	overflow:hidden;
+}
+
+#ghost {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	visibility: hidden;
+	font-size: 0.8em;
+	padding: 10px;
+	padding-bottom: 10px;
+	margin-bottom:-20px;
+	overflow: hidden;
+}
+
+#opzioni {
+	font-size: 0.25em;
+	color: #f9f8eb;
+	float: right;
+	margin: 1%;
+}
+
+input, textarea, select {
+	background-color: #f9f8eb;
+	
+}
+
+nav {
+	margin: -10px;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+nav ul{
+	margin-top:0;
+	list-style-type: none;
+	overflow:visible;
+	background-color: #155e63 ;
+	margin-bottom: 20px;
+}
+
+.selected {
+	background-color: #ea5b5b;
+}
+
+nav ul li:last-child {
+	float: right;
+	margin-right: 20%;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li:first-child {
+	margin-left: 20%;
+}
+
+nav li a {
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+nav li a:hover {
+	background-color: #ea5b5b;    
+	-webkit-transform: scale(1.15,1.15);
+    -moz-transform: scale(1.15,1.15);
+    -o-transform: scale(1.15,1.15);
+    -ms-transform: scale(1.15,1.15);
+    transform: scale(1.15,1.15);
+}
+
+.elementoLogin, .elementoEsplora, .elementoUser {
+	position: absolute;
+	text-align: center;
+	background-color: #155e63;
+  	width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	visibility:hidden;
+    opacity:0;
+    -webkit-transition:all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    -moz-transition:all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    -o-transition:all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    transition:all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.elementoLogin form input[type=text], .elementoLogin form input[type=password]{
+	width: 98%;
+	margin-left:1%;
+	margin-top:1%;
+	box-sizing: border-box;
+	padding: 5px;
+	color: #666;
+	border:none;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.elementoLogin form input[type=button], .elementoLogin form input[type=submit], .elementoLogin form input[type=reset] {
+	border: none;
+	text-decoration: none;
+	display: block;
+	color: #f2f2f2;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	width: 100%;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: inherit;
+	-webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
+.elementoLogin form input[type=button]:hover, .elementoLogin form input[type=submit]:hover, .elementoLogin form input[type=reset]:hover {
+	background-color: #ea5b5b;    
+	-webkit-transform: scale(1.08,1.08);
+    -moz-transform: scale(1.08,1.08);
+    -o-transform: scale(1.08,1.08);
+    -ms-transform: scale(1.08,1.08);
+    transform: scale(1.08,1.08);
+}
+
+.elementoLogin a:hover, .elementoEsplora a:hover, .elementoUser a:hover {
+	background-color: #ea5b5b;    
+	-webkit-transform: scale(1.08,1.08);
+    -moz-transform: scale(1.08,1.08);
+    -o-transform: scale(1.08,1.08);
+    -ms-transform: scale(1.08,1.08);
+    transform: scale(1.08,1.08);	
+}
+
+#menuEsplora:hover .elementoEsplora, #menuLogin:hover .elementoLogin, #menuUser:hover .elementoUser {
+	visibility:visible;
+    opacity:1;
+    transition-delay: 0s, 0s, 0.3s; 
+}
+
+#ricerca input[type=text]{
+	margin: 10px 0px 0px 0px;
+	padding: 5px 0px 5px 10px;
+	background-color: white;
+	background-image: url('/NYTRO/img/search.png');
+	background-size: 14px;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	float: right;
+}
+
+#recuperoPassword {
+	display:none;
+}
+
+#contattiPagina, #errorePagina {
+	text-align: center;
+	background-color: #f9f8eb;
+	margin: -20px;
+	color: #155e63;	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#contattiTesto section, #errore {
+	background-color: #a7d7c5;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#errore {
+	text-align: center;
+	color: #155e63;
+}
+
+#contattiTesto pre, #errore {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1.4em;
+}
+
+#imgContatti {
+	float:right;
+	width: 30%;
+}
+
+@media screen and (max-width: 1310px) {
+	nav ul li:first-child {
+		margin:0;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav ul li:last-child {
+		margin:0;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 805px) {
+	#ricerca {
+		display: none;
+	}
+	h1 {
+		font-size: 1em;
+	}
+	#logoHeader, #logoFooter {
+		max-width: 60px;
+	}
+	#nytro {
+		max-width: 250px;
+	}
+	#contattiTesto pre, #errore {
+		font-size: small;
+	}
+	#imgContatti {
+	display:none;}
+}
+@media screen and (max-width: 620px) {
+	nav ul a {
+		padding: 5px;
+	}
+}
+@media screen and (max-width: 500px) {
+	nav ul a {
+		padding-left: 2px;
+		padding-right:2px;
+		font-size:xx-small;
+	}
+	#opzioni {
+		display:none;
+	}
+	#logoHeader{
+		display:none;
+	}
+	#nytro {
+	padding-left: 20px;
+	}
+	#contattiTesto pre{
+		font-size: xx-small;
+		margin-left: -30px;
+	}
+	.elementoLogin a, .elementoEsplora a, .elementoUser a,.elementoLogin form input[type=text], .elementoLogin form input[type=password],.elementoLogin form input[type=button], .elementoLogin form input[type=submit], .elementoLogin form input[type=reset] {
+		padding:5px;
+		font-size: small;
+	}
+	.elementoLogin, .elementoEsplora, .elementoUser {
+		width:100px;
+	}.elementoUser {
+		width:100px;
+		right:20px;
+	}
+	footer {
+		font-size: xx-small;
+	}
+}

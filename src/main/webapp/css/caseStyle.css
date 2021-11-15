@@ -1,0 +1,144 @@
+@charset "ISO-8859-1";
+
+.img {
+	height : 100px;
+	width:100px;
+	float: left;
+	margin-right:1%;
+	text-align: center;
+	background-color: #ea5b5b;
+	overflow: hidden;
+}
+
+.img img {
+	height:100px;
+}
+
+#lista {
+	background-color: #f9f8eb;
+	color: #155e63;	
+	margin-top: -25px;
+	flex: 1;
+	text-align: center;
+}
+
+#lista h1 {
+	padding: 1%;
+}
+
+#lista ul{ 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow:visible;
+	background-color: #74b49b;
+	color: #155e63;
+	width: 100%;
+}
+
+.casa {
+	border-bottom: 1px solid grey;
+	font-size: 0.8em;
+	background-color: #74b49b;
+	color: #f9f8eb;	
+	text-align: left;
+	height: 100px;
+}
+
+.casa a {
+	color: #f9f8eb;
+	text-decoration: none;
+}
+
+ul .casa:hover, ul .casa:hover a{
+	background-color: #f9f8eb;
+	color: #155e63;
+}
+
+.casa form:last-child{
+	float:right;
+}
+
+.username{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-top: 1%;
+	padding-bottom: 0.3%;
+	cursor: pointer;
+}
+
+.casa form input[type=button], .casa input[type=submit], .casa input[type=reset] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 14px 16px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: #b33f3f;
+	height:100px;
+}
+
+.casa form input[type=button]:hover, .casa form input[type=submit]:hover, .casa form input[type=reset]:hover, #ordina form input[type=submit]:hover{
+	background-color: #ea5b5b;
+	color: #f9f8eb; 
+}
+
+#ordina {
+	background-color: #a7d7c5;
+	color: #155e63;
+	text-align: right;
+	border-bottom: 1px solid lightgrey;
+	position: relative;
+	height: 50px;
+	padding-right: 170px;
+}
+
+#ordina select{
+	margin-top: 15px;
+}
+
+#ordina input[type=submit] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 12px 61.5px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 0.8;
+	background-color: #b33f3f;
+	height:50px;
+	margin-left: 1%;
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+
+@media screen and (max-width: 1000px) {
+	#ordina{
+	font-size: small;
+	}
+	#ordina select {
+		margin-top:0;
+	}
+}
+@media screen and (max-width: 450px) {
+	#ordina {
+		display:none;
+	}
+	.casa{
+	font-size: xx-small;
+	}
+	.casa a {
+		font-size: xx-small;
+	}
+	.casa form input[type=button], .casa input[type=submit], .casa input[type=reset]  {
+		width:48px;
+		padding-left: 3px;
+		padding-right: 3px;
+		overflow: visible;
+	}
+}

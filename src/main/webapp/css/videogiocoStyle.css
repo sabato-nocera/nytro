@@ -1,0 +1,167 @@
+@charset "ISO-8859-1";
+
+a {
+	text-decoration: none;
+	color: inherit;		
+}
+
+#pagina {
+	text-align: center;
+	padding: 1%;
+	background-color: #f9f8eb;
+	margin: -20px;
+	color: #155e63;	
+	padding-top: 10px;
+}
+
+#informazioni {
+	display: table;
+	width: 100%;
+	flex: 1;
+	background-color: #a7d7c5;
+	color: #155e63;
+}
+
+#video {
+	width: 40%;
+	display: table-cell;
+	padding-left: 2px;
+	height: 400px;
+}
+
+#dettagli {
+	display: table-cell;
+    vertical-align:top;
+	padding-left: 2%;
+	text-align: center;
+	height: 400px;
+	overflow: hidden;
+}
+
+#img {
+	height: 400px;
+	float: right;
+	padding-left: 2%;
+}
+#recensioni {
+	text-align: center;
+	display: table-caption;
+	width: 100%;
+	caption-side: bottom;
+}
+
+.prof {
+	width: 20px;
+}
+
+.recensione {
+	background-color: #74b49b;
+	text-align: left;
+	width: 100%;
+	display: table;
+	border-bottom: 1px solid lightgrey;
+}
+
+.identita {
+	display: table-cell;
+	padding-left: 15%;
+	color: #f9f8eb;
+	width: 30%;
+	overflow: hidden;
+}
+
+.commento {
+	background-color: #f9f8eb;
+	display: table-cell;
+	padding-left: 5%;
+}
+
+.commento i {
+	color: #74b49b;
+}
+
+#azioni {
+	padding: 20px;
+	margin-top:-20px;
+	padding-top: 1px;
+	background-color: #a7d7c5;
+	color: #155e63;
+}
+
+#azioni label, #azioni input {
+	vertical-align: top;
+}
+
+#azioni label {
+	margin-left: 20px;
+}
+
+textarea {
+	resize: none;
+	overflow: scroll;
+}
+
+#azioni input[type=number] {
+	width: 50px;
+}
+
+.identita input[type=submit] {
+	width: 100%;
+	margin: 3px;
+}
+
+#ordina {
+	background-color: #a7d7c5;
+	color: #155e63;
+	text-align: right;
+}
+
+#ordina input[type=submit], .identita input[type=submit], #insert {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 12px 35.5px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 0.8;
+	background-color: #b33f3f;
+	height:50px;
+	margin-left: 1%;
+}
+
+#ordina form input[type=submit]:hover, .identita input[type=submit]:hover, #insert:hover{
+	background-color: #ea5b5b;
+	color: #f9f8eb; 
+}
+
+#insRecensione, #cambiaImg, #cambiaTrailer, #addGenere, #cambiaPrezzo, #cambiaDurata {
+	display: none;
+}
+
+.opzione {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+	#video {
+	display: none;
+}
+	.identita {
+	padding-left: 10px;}
+}
+@media screen and (max-width: 905px) {
+	#img {
+	display:none;
+	}
+	#pagina {
+	padding-bottom:20px;}
+}
+
+@media screen and (max-width: 605px){
+	
+	#ordina {
+	display:none;}
+	.identita {
+	font-size: 0.8em;}
+}

@@ -1,0 +1,140 @@
+@charset "ISO-8859-1";
+
+#imgProfilo {
+	display: table-cell;
+	width: 180px;
+	height: 180px;
+	padding-right: 2%;
+}
+
+#account img {
+	width: 100%;
+}
+
+#cambiaImg, #pwd, #email, #emailRec, #cell, #nascita, #genere, #casa, #ceo, #sito, #nomeAdmin, #cognome {
+	display: none;
+}
+
+.opzione {
+	cursor: pointer;
+}
+
+#informazioniAccount {
+	display: table;
+	margin-top: -20px;
+	padding-bottom: 50px;
+	flex:1;
+}
+
+#account {
+	width: 30%;
+	display: table-cell;
+	padding-left: 10%;
+}
+
+#modifiche1 {
+	width: 35%;
+	display: table-cell;
+	background-color: #a7d7c5;
+	color: #155e63;
+	padding-left: 30px;
+}
+
+#modifiche2 {
+	padding-right: 2%;
+	display: table-cell;
+	background-color: #a7d7c5;
+	color: #155e63;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+
+#insights {
+	display: table-caption;
+	caption-side: bottom;
+	text-align: center;
+	margin-top:-30px;
+	color: #155e63;
+}
+
+#insightsCasa{
+	display: table-caption;
+	caption-side: bottom;
+	text-align: center;
+	margin-top:-50px;
+	color: #155e63;
+	background-color: #74b49b;
+	padding-bottom: 30px;	
+}
+
+table {
+	text-align: left;
+}
+
+#tabContri, #tabCasa {
+	margin-top: 30px;
+	background-color: #f9f8eb;
+	margin-bottom: -30px;;
+	padding-bottom: 20px;
+}
+
+#giocatore {
+	background-color: #74b49b;
+	height: 300px;
+}
+
+#in {	
+	margin-top: -23px;
+	background-color: #74b49b;
+	padding-top: 10px;
+}
+
+#insights div {	
+	padding-bottom: 20px;
+}
+
+#admin {
+	background-color: #a7d7c5;
+	color: #155e63;
+	display: table;
+	width: 100%;
+}
+
+#admin .admin {
+	padding-left: 10%;
+	display: table-cell;
+	text-align: left;
+}
+
+#admin .admin:last-child {
+	text-align: right;
+	padding-right: 10%;
+}
+
+#admin .admin:last-child h2, #admin .admin:last-child p{
+	text-align: left;
+}
+
+@media screen and (max-width: 950px) {
+	#informazioniAccount, #account, #admin, #insights, #insightsCasa, #modifiche1, #modifiche2, .admin, #in, #admin .admin{
+	display: inline-block;
+	width:100%;
+	padding: 0;
+	font-size: small;}
+	#account, #admin, #modifiche1, #modifiche2{
+	text-align: left;
+	padding:10px;}
+	#modifiche2 {
+	padding-bottom:50px;}
+	#informazioniAccount form input {
+		max-width: 30px;
+	}
+	 #admin .admin:last-child{
+	 text-align: left;}
+	 h2 {
+	 font-size: medium;
+	 }
+	 #account {
+	 padding-left:32%;
+	 padding-right: 50%;}
+}

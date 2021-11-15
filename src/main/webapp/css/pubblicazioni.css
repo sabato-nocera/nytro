@@ -1,0 +1,146 @@
+@charset "ISO-8859-1";
+
+#pagina {
+	text-align: center;
+	padding: 1%;
+	background-color: #f9f8eb;
+	margin: -20px;
+	color: #155e63;	
+}
+#tabella a {
+	color: #b33f3f;
+}
+#aggiungi {	
+	text-align: center;
+	padding: 1%;
+	background-color: #a7d7c5;
+	color: #155e63;	
+	cursor: pointer;
+}
+
+#ordina {
+	background-color: #a7d7c5;
+	color: #155e63;
+	text-align: right;
+}
+
+#ordina input[type=text]{
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 4px;	
+	padding: 5px 0px 5px 5px;
+	margin-left: 1%;
+}
+
+#ordina input[type=submit] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 12px 61.5px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 0.8;
+	background-color: #b33f3f;
+	height:50px;
+	margin-left: 1%;
+}
+
+table {
+	border-collapse: collapse;
+	borer-radius: 4px;
+	width: 100%;
+}
+#ordina form input[type=submit]:hover, #formVideogioco form input[type=submit]:hover{
+	background-color: #ea5b5b;
+	color: #f9f8eb; 
+}
+
+table, td {
+  border-bottom: 1px solid grey;
+}
+
+th {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #74b49b;
+	color: #f9f8eb; 
+	text-align: left;
+}
+
+td {
+	padding: 10px;
+}
+
+tr:hover {
+	background-color: #a7d7c5;
+}
+
+.img {
+	height : 100px;
+	width:100px;
+	float: left;
+	margin-right:1%;
+	text-align: center;
+	background-color: #ea5b5b;
+}
+
+.img img {
+	height:100px;
+}
+
+#formVideogioco input[type=submit] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 12px 61.5px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 0.8;
+	background-color: #b33f3f;
+	height: 200px;
+	margin-left: 1%;
+}
+
+#campiFormVideogiocoObbligatori {
+	display:table-cell;
+	padding: 20px;
+	width: 30%;
+}
+
+#aggiungiVideogiocoForm {
+	display: table-cell;
+	width: 20%;
+}
+
+#radioButtonsScelta{
+	display: table-cell;
+	color: inherit;
+	width: 20%;
+}
+
+#formVideogioco {
+	display: none;
+}
+
+#formVideogioco form {
+	margin-left: 10%;
+	display: table;
+	width: 100%;
+	height: 200px;
+	vertical-align: top;
+}
+
+#tabella {
+	overflow: scroll;
+}
+
+@media screen and (max-width: 1000px) {
+	#pagina {
+	padding-bottom: 20px;}
+	#aggiungi {
+	display:none;}
+	
+}

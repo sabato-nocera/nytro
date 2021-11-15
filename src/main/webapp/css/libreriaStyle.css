@@ -1,0 +1,169 @@
+@charset "ISO-8859-1";
+
+.copertina {
+	height : 184px;
+	width: 129px;
+	float: left;
+	margin-right:1%;
+	text-align: center;
+	background-color: #ddd;
+	overflow: hidden;
+}
+
+.copertina img {
+	height: 190px;
+}
+
+#pagina {
+	text-align: center;
+	padding: 1%;
+	background-color: #f9f8eb;
+	margin: -20px;
+	color: #155e63;	
+	padding-top: 30px;
+}
+
+#lista {
+	background-color: #a7d7c5;
+	color: #f9f8eb;
+	margin-top: -25px;
+	flex: 1;
+}
+
+#lista ul{ 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow:visible;
+	background-color: #f9f8eb;
+	color: #f9f8eb;
+	width: 100%;
+}
+
+.gioco {
+	border-bottom: 1px solid lightgrey;
+	font-size: 0.8em;
+	background-color: #74b49b;
+	color: #f9f8eb;	
+	text-align: left;
+	height: 184px;
+}
+
+li a {
+	text-decoration: none;
+	color: #f9f8eb;
+}
+
+ul .gioco:hover, ul .gioco:hover a{
+	background-color: #f9f8eb;
+	color: #155e63;
+}
+
+li #download:only-child {
+	float:right;
+}
+
+.titolo{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-top: 1%;
+	padding-bottom: 0.3%;
+}
+
+#vuoto {
+	width: 100%;
+	text-align: center;
+	background-color: #74b49b;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#download {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 14px 16px;
+	text-align: center;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: #b33f3f;
+	height: 184px;
+	cursor: pointer;
+}
+
+#download:hover{
+	background-color: #ea5b5b;
+	color: #f9f8eb;
+}
+
+#ordina {
+	background-color: #a7d7c5;
+	color: #155e63;
+	text-align: left;
+	border-bottom: 1px solid lightgrey;
+	position:relative;
+	height: 100px;
+	padding-right: 100px;
+	padding-left: 1%;
+	padding-top: 20px;
+	padding-bottom: 0;
+}
+
+#ordina input[type=submit] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 12px 35.5px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 0.8;
+	background-color: #b33f3f;
+	height:120px;
+	margin-left: 1%;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.gioco form input[type=button], .gioco input[type=submit], .gioco input[type=reset] {
+	border: none;
+	text-decoration: none;
+	color: #155e63;
+	padding: 0px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: inherit;
+}
+
+.gioco form input[type=submit]:hover, .gioco form input[type=reset]:hover, .gioco form input[type=submit]:hover, #ordina form input[type=submit]:hover{
+	background-color: #ea5b5b;
+	color: #f9f8eb; 
+}
+
+@media screen and (max-width: 1000px) {
+	#pagina {
+	margin-top:1px;
+	padding-top:10px;
+	padding-bottom: 20px;}
+	#ordina{
+	font-size: small;
+	}	
+}
+@media screen and (max-width: 450px) {
+	#ordina {
+		display:none;
+	}
+	#download {
+		width:50px; 	
+		padding-left: 3px;
+		padding-right: 3px;
+		font-size: xx-small;
+	}
+	#pagina {
+		padding-left:35px;
+		padding-right:35px;
+	}
+}
+

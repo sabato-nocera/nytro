@@ -1,0 +1,158 @@
+@charset "ISO-8859-1";
+
+.profilo {
+	height: 100px;
+	width:100px;
+	float: left;
+	margin-right:1%;
+	text-align: center;
+	background-color: #ddd;
+}
+
+.profilo img {
+	height:100px;
+}
+
+#pagina {
+	text-align: center;
+	padding: 1%;
+	background-color: #f9f8eb;
+	color: #155e63;	
+}
+
+#lista {
+	background-color: #74b49b;
+	color: #155e63;	
+	margin-top: -25px;
+	flex: 1;
+	text-align: center;
+}
+
+#lista ul{ 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow:visible;
+	background-color: #a7d7c5;
+	color: #155e63;
+	width: 100%;
+}
+
+.amico {
+	border-bottom: 1px solid grey;
+	font-size: 0.8em;
+	background-color: #a7d7c5;
+	color: #155e63;
+	text-align: left;
+	height: 100px;
+}
+
+ul .amico:hover{
+	background-color: #74b49b;
+	color: #f9f8eb;
+}
+
+.amico form:last-child{
+	float:right;
+}
+
+.username{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-top: 1%;
+	padding-bottom: 0.3%;
+	cursor: pointer;
+}
+
+.amico form input[type=button], .amico input[type=submit], .amico input[type=reset] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 14px 16px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	background-color: #b33f3f;
+	height:100px;
+}
+
+.amico form input[type=button]:hover, .amico form input[type=submit]:hover, .amico form input[type=reset]:hover, #aggiungi form input[type=submit]:hover{
+	background-color: #ea5b5b;
+	color: #f9f8eb; 
+}
+
+#aggiungi {
+	height: 20%;
+	background-color: #f9f8eb;
+	color: #155e63;
+	text-align: right;
+}
+
+#vuoto {
+	width: 100%;
+	text-align: center;
+	background-color: #a7d7c5;
+	margin-top: -22px;
+	color:#155e63;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+#aggiungi input[type=text]{
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 4px;	
+	padding: 5px 0px 5px 5px;
+	margin-left: 1%;
+}
+
+#aggiungi input[type=submit] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 11.5px 13.5px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 0.8;
+	background-color: #b33f3f;
+	height:100px;
+	margin-left: 1%;
+}
+
+@media screen and (max-width: 1000px) {
+	#aggiungi{
+	font-size: small;
+	}
+	#aggiungi select {
+		margin-top:0;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	#aggiungi label {
+	display:none;}
+}
+
+@media screen and (max-width: 450px) {
+	.amico{
+	font-size: xx-small;
+	}
+	
+	#aggiungi label {
+	display:none;}
+	
+	.amico a {
+		font-size: xx-small;
+	}
+		.amico form input[type=button], .amico input[type=submit], .amico input[type=reset]  {
+		width:45px;
+		padding-left: 3px;
+		padding-right: 3px;
+		overflow: visible;
+	}
+	
+}
+

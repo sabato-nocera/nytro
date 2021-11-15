@@ -1,0 +1,118 @@
+@charset "ISO-8859-1";
+
+#password {
+	text-decoration: none;
+	padding-top: 1%;
+	font-style: italic;
+	color: #666;
+	cursor:pointer;
+}
+
+.box p, #recuperoPassword p {
+	text-align:center;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+#pagina {
+	text-align: center;
+	padding: 1%;
+	background-color: #f9f8eb;
+	margin: -20px;
+	color: #155e63;	
+	padding-bottom: 10px;
+}
+
+
+#loginForm, #registrazioneForm, #registrazioneCasa, #rimozioneForm, #risultati {
+	padding-top: 30px;
+	width:100%;
+	text-align:center;
+	background-color: #a7d7c5;
+	color: #155e63;	
+	flex:1;
+	padding-bottom: 20px;
+}
+
+#risultati a {
+	text-decoration: none;
+	color: #b33f3f;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#recuperoPassword {
+	padding-top: 20px;
+	width:100%;
+	text-align:center;
+	background-color: #74b49b;
+	color: #f9f8eb; 
+	padding-bottom: 50px;
+}
+
+.registrazione {
+	margin: 20px auto;
+	padding: 14px 10px;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	display: block;
+	width: 400px;
+	transition:0.25s;
+}
+
+.registrazione:focus{
+	width:480px;
+	border-color:#b33f3f;
+}
+
+.login {
+	margin: auto;
+	padding: 14px 10px;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	display: block;
+	width: 400px;
+	transition:0.25s;
+}
+
+.login:focus{
+	width:480px;
+}
+
+#sub, .sub, #button{
+	border: none;
+	text-decoration: none;
+	display: block;
+	background-color: #b33f3f;
+	color: #f9f8eb;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	width: 420px;
+	margin: auto;
+	-webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+#button {
+	margin-bottom: 10px;
+}
+#sub:hover, .sub:hover, #button:hover{
+	background-color: #ea5b5b;    
+	-webkit-transform: scale(1.08,1.08);
+    -moz-transform: scale(1.08,1.08);
+    -o-transform: scale(1.08,1.08);
+    -ms-transform: scale(1.08,1.08);
+    transform: scale(1.08,1.08);
+}
+
+
+@media screen and (max-width: 500px) {
+	.registrazione, .login, .sub, #sub, #button{
+	width: 130px;}
+	.registrazione:focus, .login:focus, .sub:hover, #sub:hover, #button:hover{
+	width: 170px;}
+}

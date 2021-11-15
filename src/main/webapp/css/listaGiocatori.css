@@ -1,0 +1,81 @@
+@charset "ISO-8859-1";
+
+#pagina {
+	text-align: center;
+	padding: 1%;
+	background-color: #f9f8eb;
+	margin: -20px;
+	color: #155e63;	
+}
+
+table {
+	border-collapse: collapse;
+	borer-radius: 4px;
+	width: 100%;
+}
+
+table, th, td {
+  border-bottom: 1px solid grey;
+}
+
+th {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #74b49b;
+	color: #f9f8eb; 
+	text-align: left;
+}
+
+td {
+	padding: 10px;
+	color: #155e63;
+}
+
+td a {
+	color: #b33f3f;
+}
+
+tr:hover {
+	background-color: #a7d7c5;
+}
+
+#select {
+	background-color: #a7d7c5;
+	color: #155e63;
+	text-align: right;
+	margin-bottom:-20px;
+}
+
+#ordina {
+	background-color: #a7d7c5;
+	color: #155e63;
+	text-align: right;
+}
+
+#select input[type=submit], #ordina input[type=submit] {
+	border: none;
+	text-decoration: none;
+	color: #f9f8eb;
+	padding: 12px 35.5px;
+	text-align: center;
+	cursor: pointer;
+	font-family: inherit;
+	background-color: #b33f3f;
+	height:50px;
+	margin-left: 1%;
+}
+
+#select input[type=submit]:hover, #ordina input[type=submit]:hover {
+	background-color: #ea5b5b;
+	color: #f9f8eb;
+}
+
+#tabella {
+	overflow: scroll;
+}
+
+@media screen and (max-width: 1000px) {
+	#pagina {
+	padding-bottom: 20px;}
+}

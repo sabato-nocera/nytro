@@ -1,0 +1,134 @@
+@charset "ISO-8859-1";
+
+header, footer {
+	padding-bottom: 18px;
+}
+
+.info a {
+text-decoration: none;
+color: #f9f8eb;
+}
+
+.evidenza {
+	text-align: center;
+	background-color: #f2f4f6;
+	margin: -20px;
+	padding-top: 1%;
+	padding-bottom: 50px;
+	flex: 1;
+}
+
+#welcome {
+	text-align: center;
+	padding: 1%;
+	padding-bottom: 50px;
+	background-color: #f9f8eb;
+	margin: -20px;
+	color: #155e63;
+}
+
+#dispari {
+	background-color: #a7d7c5;
+	color: #155e63;
+}
+
+#pari {
+	background-color: #74b49b;
+	color: #f9f8eb;
+}
+
+#dispari2 {
+	background-color: #ea5b5b;
+	color: #f9f8eb;
+}
+
+#gioco1, #gioco2, #gioco3, #gioco4, #gioco5, #gioco6, #gioco7, #gioco8, #gioco9 {
+	display: inline-block;
+	width: 20%;
+	position: relative;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	margin: 2%;
+}
+
+img {
+	width: 100%;
+	margin-bottom: -10px;
+}
+
+.prezzo {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #666;
+	color: #f3f3f3;
+	padding:2%;
+	font-size: 1.5em;
+	opacity: 0.9;
+}
+
+.info {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-color: #ea5b5b;  
+	color: #f9f8eb;  
+	z-index: 1;
+	visibility:hidden;
+    opacity:0;
+    overflow: hidden;
+	margin-bottom: -10px;
+}
+
+.info h2 {
+	background-color: #b33f3f;
+	padding: 10px;
+	color: #f9f8eb;
+}
+
+#gioco1:hover .info, #gioco2:hover .info, #gioco3:hover .info, #gioco4:hover .info, #gioco5:hover .info, #gioco6:hover .info, #gioco7:hover .info, #gioco8:hover .info, #gioco9:hover .info {
+	visibility:visible;
+    opacity:1;
+	animation: 0.5s slide-up
+}
+  
+@media screen and (max-width: 1000px) {
+	.info {
+	font-size: x-small;}
+}
+@media screen and (max-width: 805px) {
+	
+	.info iframe{
+	display:none;
+	}
+	.info {
+	font-size: xx-small;}
+}
+
+@media screen and (max-width: 450px) {
+	#welcome {
+		padding:25px;
+	}
+	#welcome p {
+		font-size: small;
+		margin-bottom: 30px;
+	}
+	.info h3 {
+	display:none;}
+	.prezzo {
+	font-size: small;}
+
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 30%;
+	margin-bottom: -10px;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+	margin-bottom: -10px;
+  }
