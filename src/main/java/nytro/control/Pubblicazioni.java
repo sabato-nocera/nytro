@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;
+import java.util.logging.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -26,6 +27,7 @@ import nytro.other.Utils;
 @MultipartConfig(maxFileSize = 16177215)
 public class Pubblicazioni extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private final static Logger LOGGER = Logger.getLogger( Pubblicazioni.class.getName() );
 	private IVideogiocoDAO videogiocoDAO = new VideogiocoDAO();
 	private IAccountDAO accountDAO = new AccountDAO();
 
@@ -44,7 +46,7 @@ public class Pubblicazioni extends HttpServlet {
 		try {
 			isin = accountDAO.doRetrieveIsinByUsername(account.getUsername());
 		} catch (SQLException e1) {
-			e1.printStackTrace();
+			LOGGER.info( "INFO message for exception " + e1.getMessage());
 		}
 		
 		String aggiungiVideogioco = request.getParameter("aggiungiVideogioco");
