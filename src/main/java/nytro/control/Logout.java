@@ -12,16 +12,24 @@ public class Logout extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)	throws ServletException, IOException {
-		request.getSession().removeAttribute("account");
-		request.getSession().invalidate();
+		try {
+			request.getSession().removeAttribute("account");
+			request.getSession().invalidate();
 
-		String url = response.encodeURL("/NYTRO/Index");
-		response.sendRedirect(url);
+			String url = response.encodeURL("/NYTRO/Index");
+			response.sendRedirect(url);
+		}
+		catch (Exception e) {
+		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		doGet(request, response);
+		try {
+			doGet(request, response);
+		}
+		catch (Exception e) {
+		}
 	}
 
 }
