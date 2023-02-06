@@ -70,7 +70,7 @@ public class RecuperaPassword extends HttpServlet {
 			String url = response.encodeURL("jsp/loginForm.jsp");
 			request.getRequestDispatcher(url).forward(request, response);
 
-		} catch (Exception e) {
+		} catch (MyException e) {
 
 		}
 
